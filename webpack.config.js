@@ -7,6 +7,7 @@ MiniCssExtractPlugin = require('mini-css-extract-plugin');
 CleanWebpackPlugin = require('clean-webpack-plugin');
 UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 getCSSModuleLocalIdent = require('react-dev-utils/getCSSModuleLocalIdent');
+postcssImport = require('postcss-import');
 
 const OUTPUT_FOLDER = 'build';
 const ENTRY_FOLDER = 'src';
@@ -24,15 +25,7 @@ const getStyleLoaders = (cssOptions, preProcessor) => {
             loader: require.resolve('postcss-loader'),
             options: {
                 ident: 'postcss',
-                plugins: () => [
-                    postcssFlexbugsFixer,
-                    postcssPresetEnv({
-                        autoprefixer: {
-                            flexbox: 'no-2009',
-                        },
-                        stage: 3,
-                    }),
-                ],
+                plugins: () => [postcssFlexbugsFixer, postcssImport, postcssPresetEnv()],
             },
         },
     ];
