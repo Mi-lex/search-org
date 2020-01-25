@@ -7,7 +7,7 @@ const App = (): React.ReactNode => {
         <>
             <PageHeader />
             <div className={classes.wrapper}>
-
+                <h1>Мои организации</h1>
             </div>
         </>
     );
