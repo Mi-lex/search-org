@@ -8,6 +8,7 @@ CleanWebpackPlugin = require('clean-webpack-plugin');
 UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 getCSSModuleLocalIdent = require('react-dev-utils/getCSSModuleLocalIdent');
 postcssImport = require('postcss-import');
+cssvariables = require('postcss-css-variables');
 
 const OUTPUT_FOLDER = 'build';
 const ENTRY_FOLDER = 'src';
@@ -25,7 +26,7 @@ const getStyleLoaders = (cssOptions, preProcessor) => {
             loader: require.resolve('postcss-loader'),
             options: {
                 ident: 'postcss',
-                plugins: () => [postcssFlexbugsFixer, postcssImport, postcssPresetEnv()],
+                plugins: () => [postcssFlexbugsFixer, cssvariables, postcssImport, postcssPresetEnv()],
             },
         },
     ];

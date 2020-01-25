@@ -1,6 +1,12 @@
 @import "./globals/fonts.css";
 @import "./globals/normalize.css";
-@import "./globals/variables.css";
+
+:root {
+    --page-font-color: black;
+    --page-font: Verdana, 'Sans Serif';
+    --page-font-size: 16px;
+    --page-line-height: normal;
+}
 
 *,
 *::before,
