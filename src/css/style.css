@@ -24,6 +24,7 @@ body {
   font-size: var(--page-font-size);
   font-weight: normal;
   line-height: var(--page-line-height);
+  background-color:#E5E5E5;
 }
 
 img {

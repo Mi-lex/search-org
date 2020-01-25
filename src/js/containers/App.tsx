@@ -1,8 +1,16 @@
-import * as React from 'react';
+import React from 'react';
+import PageHeader from '../components/PageHeader';
 import classes from './App.module.css';
 
-const App: React.SFC = () => {
-    return <h1 className={classes.title}>I&apos;m actually working</h1>;
+const App = (): React.ReactNode => {
+    return (
+        <>
+            <PageHeader />
+            <div className={classes.wrapper}>
+
+            </div>
+        </>
+    );
 };
 
 export default App;

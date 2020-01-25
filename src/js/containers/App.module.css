@@ -1,3 +1,8 @@
-.title {
-  color: yellow;
+.wrapper {
+    --vertical-paddings: 56px;
+
+    padding-top: var(--vertical-paddings);
+    padding-bottom: var(--vertical-paddings);
+    width: 90%;
+    max-width: 736px;
 }
