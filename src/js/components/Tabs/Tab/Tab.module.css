@@ -1,0 +1,21 @@
+.tab {
+    --vertical-paddings: 24px;
+
+    padding-top: 8px;
+    padding-bottom: 11px;
+    padding-left: var(--vertical-paddings);
+    padding-right: var(--vertical-paddings);
+
+    font-size: 12px;
+    font-weight: bold;
+
+    border: none;
+    background-color: inherit;
+    color: #B9B9B9;
+}
+
+.tab.active {
+    color: black;
+    border-top: 2px solid #F50634;
+    background-color: white;
+}

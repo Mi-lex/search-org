@@ -1,1 +1,1 @@
-export type TabName = 'new' | 'saved';
+export type TabName = 'Новая организация' | 'Сохраненные организации';

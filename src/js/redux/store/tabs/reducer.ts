@@ -1,7 +1,7 @@
 import { CHANGE_TAB, TabsState, TabActionType } from './types';
 
 const initialState: TabsState = {
-    current: 'new',
+    current: 'Новая организация',
 };
 
 export function tabsReducer(state = initialState, action: TabActionType): TabsState {
