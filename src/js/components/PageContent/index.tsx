@@ -2,6 +2,7 @@ import React from 'react';
 import Tabs from '../Tabs';
 import TabContent from '../../containers/TabContent';
 import classes from './PageContent.module.css';
+import SearchOrg from '../SearchOrg';
 
 const PageContent: React.FC = () => {
     return (
@@ -10,7 +11,7 @@ const PageContent: React.FC = () => {
                 <h1>Мои организации</h1>
                 <Tabs />
                 <TabContent name="Новая организация">
-                    <label htmlFor="">Does it matter ?</label>
+                    <SearchOrg />
                 </TabContent>
                 <TabContent name="Сохраненные организации">
                     <h2>Saved organizations</h2>

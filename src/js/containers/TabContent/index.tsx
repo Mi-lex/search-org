@@ -13,7 +13,7 @@ const connector = connect(mapState, null);
 
 type Props = ConnectedProps<typeof connector> & {
     name: TabName;
-    children: React.Component;
+    children: JSX.Element;
 };
 
 const TabContent = ({ currentTab, name, children }: Props): JSX.Element => {

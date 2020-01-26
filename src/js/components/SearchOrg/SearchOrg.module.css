@@ -1,0 +1,17 @@
+.inp {
+    --vertical-paddings: 15px;
+    --horizontal-paddings: 16px;
+
+    width: 100%;
+    margin-top: 10px;
+    padding: var(--vertical-paddings) var(--horizontal-paddings);
+    vertical-align: middle;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: #E5E5E5;
+}
+
+.inp:focus {
+    border-color: #FAE29F;
+    outline: none;
+}
