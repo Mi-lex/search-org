@@ -1,5 +1,5 @@
 .wrapper {
-    --vertical-paddings: 56px;
+    --vertical-paddings: 45px;
 
     padding-top: var(--vertical-paddings);
     padding-bottom: var(--vertical-paddings);

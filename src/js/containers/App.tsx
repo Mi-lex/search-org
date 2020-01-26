@@ -1,14 +1,16 @@
 import React from 'react';
+import { Provider } from 'react-redux';
+import { rootStore } from '../redux/store';
 import PageHeader from '../components/PageHeader';
-import classes from './App.module.css';
+import PageContent from '../components/PageContent';
 
-const App = (): React.ReactNode => {
+const App: React.FC = () => {
     return (
         <>
             <PageHeader />
-            <div className={classes.wrapper}>
-                <h1>Мои организации</h1>
-            </div>
+            <Provider store={rootStore}>
+                <PageContent />
+            </Provider>
         </>
     );
 };
