@@ -18,10 +18,10 @@ const connector = connect(mapState, mapDispatch);
 
 type Props = ConnectedProps<typeof connector> & {
     name: TabName;
-    children?: JSX.Element;
+    children?: JSX.Element | string;
 };
 
-const Tab = ({ currentTab, changeTab, name, children = `` }: Props) => {
+const Tab = ({ currentTab, changeTab, name, children = `` }: Props): JSX.Element => {
     const tabClassName: string[] = ['tab'];
 
     if (currentTab === name) {

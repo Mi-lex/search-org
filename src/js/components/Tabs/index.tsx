@@ -3,7 +3,7 @@ import Tab from './Tab';
 import SavedOrgsCounter from './SavedOrgsCounter';
 import classes from './Tabs.module.css';
 
-const Tabs = () => {
+const Tabs = (): JSX.Element => {
     return (
         <>
             <ul className={classes.tabs}>
