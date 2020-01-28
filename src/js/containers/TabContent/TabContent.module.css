@@ -2,7 +2,7 @@
     --horizontal-paddings: 24px;
     --vertical-paddings: 32px; 
     display: none;
-    height: 50vh;
+    min-height: 400px;
     padding: var(--vertical-paddings) var(--horizontal-paddings); 
     max-height: 568px;
     background-color: white;
